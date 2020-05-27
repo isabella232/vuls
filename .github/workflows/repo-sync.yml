@@ -1,6 +1,7 @@
 on:
-    schedule:
-    - cron:  '*/15 * * * *'
+    #schedule:
+    #- cron:  '*/15 * * * *'
+    on: [pull_request]
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
