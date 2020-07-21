@@ -41,7 +41,6 @@ func FillLibrary(r *models.ScanResult) (totalCnt int, err error) {
 
 	for _, lib := range r.LibraryScanners {
 		for _, l := range lib.Libs {
-			util.Log.Debug(l.Name)
 			r.Packages[l.Name] = models.Package{
 				Name:    l.Name,
 				Version: l.Version,
