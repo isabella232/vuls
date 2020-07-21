@@ -1,6 +1,13 @@
 name: dockerhub
 
 on:
+    release:
+      types:
+        - created
+        - edited
+        - prereleased
+        - published
+        - released
     push:
       branches:
         - '*'
